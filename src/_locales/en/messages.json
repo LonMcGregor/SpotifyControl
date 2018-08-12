@@ -1,0 +1,10 @@
+{
+    "name": {
+        "message": "Spotify Control",
+        "description": "Extension Name"
+    },
+    "description": {
+        "message": "Simple play / pause as a browser button",
+        "description": "Description of extension"
+    }
+}

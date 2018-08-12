@@ -1,0 +1,51 @@
+{
+    "manifest_version": 2,
+    "name": "__MSG_name__",
+    "version": "1.0.0",
+
+    "default_locale": "en",
+    "description": "__MSG_description__",
+    "icons": {
+      "16": "16.png",
+      "32": "32.png",
+      "48": "48.png",
+      "128": "128.png"
+    },
+    "author": "Léon McGregor",
+    "homepage_url": "https://github.com/LonMcGregor/SpotifyControls",
+
+    "browser_action": {
+      "default_icon": {
+        "16": "16.png",
+        "24": "24.png",
+        "32": "32.png"
+      },
+      "default_title": "__MSG_name__"
+    },
+
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+
+    "permissions": [
+      "storage",
+      "https://api.spotify.com/",
+      "identity"
+    ],
+
+    "commands": {
+      "toggle-playback": {
+        "suggested_key": {
+          "default": "MediaPlayPause"
+        },
+        "description": "Toggle spotify playback"
+      },
+
+      "_execute_browser_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+P"
+        }
+      }
+    }
+}
